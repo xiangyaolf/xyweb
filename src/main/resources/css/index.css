@@ -1,0 +1,75 @@
+/*菜单+内容区域*/
+.content-wrapper {
+    background: #FFFFFF;
+}
+
+/*内容导航栏*/
+.content-header {
+    /*消除内边距*/
+    padding: 0;
+}
+
+.content-header > .nav-bar {
+    list-style-type: none;
+    padding: 0;
+    /*去掉和内容部分的边距*/
+    margin-bottom: 0;
+}
+
+.content-header > .nav-bar > li {
+    display: inline-block;
+    width: 91px;
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 40px;
+    color: #337AB7;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+/*菜单选项卡 鼠标样式*/
+.content-header > .nav-bar > li:hover {
+    cursor: default;
+}
+
+/**
+菜单选项卡激活样式
+ */
+.content-header > .nav-bar > .cur {
+    border-top: 1px solid #DDDDDD;
+    border-left: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+    border-bottom: none;
+    /*给框加弧形*/
+    border-radius: 5px 5px 0 0;
+    /*给边框添加光晕*/
+    box-shadow: inset 0 0 10px #DDDDDD;
+    color: black;
+}
+
+/**
+菜单选项卡激活 关闭按钮样式
+ */
+.content-header > .nav-bar > li > .cur {
+    color: black;
+}
+
+.content-header > .nav-bar > li > i {
+    margin-left: 7px;
+    color: #337AB7;
+}
+
+/*内容区域*/
+.content {
+    padding: 0;
+}
+
+/*激活内容区域*/
+.content > .cur {
+    display: block;
+}
+
+.iframe {
+    height: 100%;
+    display: none;
+}
